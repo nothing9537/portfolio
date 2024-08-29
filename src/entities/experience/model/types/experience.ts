@@ -7,4 +7,7 @@ export type ExperienceItem = {
   iconBg: ClassValue;
   date: string;
   points: string[];
+  githubUrl?: string;
+  applicationUrl?: string;
+  skills?: string[];
 };

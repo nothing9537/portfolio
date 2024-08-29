@@ -4,11 +4,8 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
-import menu from "./menu.svg";
-import close from "./close.svg";
 
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -21,14 +18,11 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import puppies from "./company/puppies-ato-z.png";
+import aiPlatform from "./company/ai-platform.png";
+import vercel from './company/vercel.png';
+import freezingBlood from './company/freezing-blood.png';
+import productionProject from './company/production-project.png';
 
 export {
   logo,
@@ -37,10 +31,7 @@ export {
   mobile,
   web,
   github,
-  menu,
-  close,
   css,
-  docker,
   figma,
   git,
   html,
@@ -52,11 +43,9 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  puppies,
+  aiPlatform,
+  vercel,
+  freezingBlood,
+  productionProject
 };

@@ -1,4 +1,4 @@
-import { FC, useCallback, useEffect, useState } from 'react';
+import { FC, memo, useCallback, useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 import { Logo } from '@/shared/ui/logo';
@@ -10,7 +10,7 @@ import { NavbarItemType } from '../../model/types/navbar';
 import { NavbarItem } from './navbar-item';
 import { BurgerMenu } from '../burger-menu/burger-menu';
 
-export const Navbar: FC = () => {
+export const Navbar: FC = memo(() => {
   const { hash } = useLocation();
 
   const initialTab = hash.replace('#', '') || '';
@@ -44,7 +44,7 @@ export const Navbar: FC = () => {
           <Logo onClick={handleInitialTabSwitch} />
           <p className="text-white text-[16px] font-bold cursor-pointer">
             Vadym Monastyrskyi&nbsp;
-            <span className="sm:block hidden">Front-end developer</span>
+            <span className="sm:block hidden">Software Engineer</span>
           </p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-8">
@@ -54,4 +54,4 @@ export const Navbar: FC = () => {
       </div>
     </div>
   );
-};
+});

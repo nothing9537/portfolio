@@ -10,6 +10,10 @@ export const NavbarItems: NavbarItemType[] = [
     text: "Work",
   },
   {
+    id: "skills",
+    text: "Skills",
+  },
+  {
     id: "contact",
     text: "Contact",
   },

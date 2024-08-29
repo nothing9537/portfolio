@@ -1,14 +1,17 @@
 import { FC } from 'react';
+import { ClassValue } from 'clsx';
 
 import { motion } from 'framer-motion';
+import { cn } from '../lib/utils/cn';
 
 interface SectionSwitchProps {
   toSection: string;
+  className?: ClassValue;
 }
 
-export const SectionSwitch: FC<SectionSwitchProps> = ({ toSection }) => {
+export const SectionSwitch: FC<SectionSwitchProps> = ({ toSection, className }) => {
   return (
-    <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+    <div className={cn("relative z-30 xs:bottom-10 w-full flex justify-center items-center", className)}>
       <a href={`#${toSection}`}>
         <div className="w-[32px] h-[64px] rounded-3xl border-[3px] border-secondary flex justify-center items-start p-2">
           <motion.div

@@ -12,9 +12,7 @@ export const MainLayout: FC<MainLayoutProps> = ({ navbar, footer, body }) => {
       <nav className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
         {navbar}
       </nav>
-      <section>
-        {body}
-      </section>
+      {body}
       <footer className="relative z-0">
         {footer}
       </footer>
