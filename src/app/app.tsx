@@ -1,6 +1,7 @@
 import { FC } from 'react';
 
 import { Navbar } from '@/widgets/navbar';
+import { Hero } from '@/widgets/hero';
 import { MainLayout } from '@/shared/layouts/main-layout';
 
 export const App: FC = () => {
@@ -9,6 +10,7 @@ export const App: FC = () => {
       navbar={
         <>
           <Navbar />
+          <Hero />
         </>
       }
       body={<div>Body</div>}

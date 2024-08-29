@@ -9,10 +9,12 @@ interface MainLayoutProps {
 export const MainLayout: FC<MainLayoutProps> = ({ navbar, footer, body }) => {
   return (
     <main className="relative z-0 bg-primary">
-      <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+      <nav className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
         {navbar}
-      </div>
-      {body}
+      </nav>
+      <section>
+        {body}
+      </section>
       <footer className="relative z-0">
         {footer}
       </footer>
