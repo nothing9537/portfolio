@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import { motion } from 'framer-motion';
 
 import { styles } from '@/shared/consts/styles';
 import { cn } from '@/shared/lib/utils/cn';
@@ -7,6 +6,7 @@ import { PC_Canvas } from '@/shared/ui/canvas';
 
 import { HeroLine } from './hero-line';
 import { HeroTitle } from './title';
+import { SectionSwitch } from '@/shared/ui/section-switch';
 
 export const Hero: FC = () => {
   return (
@@ -16,6 +16,7 @@ export const Hero: FC = () => {
         <HeroTitle />
       </div>
       <PC_Canvas />
+      <SectionSwitch toSection="about" />
     </section>
   );
 };

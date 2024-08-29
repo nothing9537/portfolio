@@ -1,5 +1,5 @@
-import { FC, useCallback, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { FC, useCallback, useEffect, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 import { Logo } from '@/shared/ui/logo';
 import { cn } from '@/shared/lib/utils/cn';
@@ -11,7 +11,17 @@ import { NavbarItem } from './navbar-item';
 import { BurgerMenu } from '../burger-menu/burger-menu';
 
 export const Navbar: FC = () => {
-  const [currentTab, setCurrentTab] = useState('');
+  const { hash } = useLocation();
+
+  const initialTab = hash.replace('#', '') || '';
+
+  const [currentTab, setCurrentTab] = useState(initialTab);
+
+  useEffect(() => {
+    if (currentTab !== initialTab) {
+      setCurrentTab(initialTab);
+    }
+  }, [initialTab]);
 
   const handleInitialTabSwitch = useCallback(() => {
     setCurrentTab('');
