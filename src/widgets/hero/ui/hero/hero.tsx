@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 
 import { styles } from '@/shared/consts/styles';
 import { cn } from '@/shared/lib/utils/cn';
+import { PC_Canvas } from '@/shared/ui/canvas';
 
 import { HeroLine } from './hero-line';
 import { HeroTitle } from './title';
@@ -14,6 +15,7 @@ export const Hero: FC = () => {
         <HeroLine />
         <HeroTitle />
       </div>
+      <PC_Canvas />
     </section>
   );
 };
