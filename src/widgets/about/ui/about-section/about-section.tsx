@@ -19,9 +19,9 @@ export const About: FC = () => {
     >
       <ServiceCardsGrid
         services={Services}
-        className="my-16"
+        className="mt-8"
       />
-      <SectionSwitch toSection="work" />
+      <SectionSwitch toSection="work" className="mt-16" />
     </SectionWrapper>
   );
 };

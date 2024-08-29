@@ -1,7 +1,8 @@
 import { FC } from 'react'
 
-import { SectionWrapper } from '@/shared/layouts/section-layout'
 import { Experiences } from '@/entities/experience'
+import { SectionWrapper } from '@/shared/layouts/section-layout'
+import { SectionSwitch } from '@/shared/ui/section-switch'
 
 import { VerticalTimeLine } from '../vertical-timeline/vertical-timeline'
 
@@ -17,6 +18,7 @@ export const Experience: FC = () => {
       }}
     >
       <VerticalTimeLine items={Experiences} />
+      <SectionSwitch toSection="skills" className="mt-16" />
     </SectionWrapper>
   )
 }
