@@ -15,7 +15,7 @@ export const BurgerMenu: FC<BurgerMenuProps> = ({ currentTab, setCurrentTab }) =
 
   return (
     <div className="sm:hidden flex flex-1 justify-end items-center">
-      <Icon className="w-[28px] h-[28px] cursor-pointer" onClick={() => setIsOpen((prev) => !prev)} />
+      <Icon className="w-6 h-6 cursor-pointer" onClick={() => setIsOpen((prev) => !prev)} />
       {isOpen && (
         <BurgerMenuItems
           onBurgerItemClickCallback={() => setIsOpen(false)}
