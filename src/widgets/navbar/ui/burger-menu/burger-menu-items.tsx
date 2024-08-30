@@ -14,13 +14,16 @@ interface BurgerMenuItemProps {
 
 export const BurgerMenuItems: FC<BurgerMenuItemProps> = ({ isOpen, currentTab, setCurrentTab, onBurgerItemClickCallback }) => {
   return (
-    <div className={cn('p-4 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-md', isOpen ? 'flex' : 'hidden')}>
+    <div className={cn('p-4 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-36 z-10 rounded-md flex flex-col gap-4', isOpen ? 'flex' : 'hidden')}>
       <NavbarItems
         currentTab={currentTab}
         setCurrentTab={setCurrentTab}
         onItemClickCallback={onBurgerItemClickCallback}
         className="list-none flex flex-col justify-end items-start gap-4"
       />
+      <a href="https://github.com/nothing9537/portfolio" target="_blank">
+        Source
+      </a>
     </div>
   )
 }

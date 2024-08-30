@@ -14,7 +14,7 @@ interface NavbarItemProps {
 export const NavbarItem: FC<NavbarItemProps> = ({ item, currentTab, setCurrentTab, onClickCallback }) => {
   return (
     <li
-      className={cn('hover:text-white text-[16px] font-medium transition-colors', currentTab === item.id ? 'text-white' : 'text-secondary')}
+      className={cn('hover:text-white text-base font-medium transition-colors', currentTab === item.id ? 'text-white' : 'text-secondary')}
       onClick={() => {
         onClickCallback?.(item);
         setCurrentTab(item.id);

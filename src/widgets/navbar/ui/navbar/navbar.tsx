@@ -49,6 +49,9 @@ export const Navbar: FC = memo(() => {
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-8">
           {NavbarItems.map(renderNavbarItem)}
+          <a href="https://github.com/nothing9537/portfolio" target="_blank">
+            Source
+          </a>
         </ul>
         <BurgerMenu currentTab={currentTab} setCurrentTab={setCurrentTab} />
       </div>
