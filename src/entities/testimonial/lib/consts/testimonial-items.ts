@@ -22,4 +22,11 @@ export const Testimonials: TestimonialItem[] = [
     company: "Ipsum",
     imageUrl: "https://randomuser.me/api/portraits/women/6.jpg",
   },
+  {
+    text: "Nothing here yet, but hopefully that will correct itself to positive reviews soon! :)",
+    name: "Lorem Ipsum",
+    designation: "Lorem",
+    company: "Ipsum",
+    imageUrl: "https://randomuser.me/api/portraits/women/2.jpg",
+  },
 ];

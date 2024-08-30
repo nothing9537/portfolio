@@ -4,6 +4,7 @@ import { ProjectsGrid, Projects as ProjectsList } from '@/entities/project';
 import { SectionWrapper } from '@/shared/layouts/section-layout';
 
 import { Description } from '../description/description';
+import { SectionSwitch } from '@/shared/ui/section-switch';
 
 export const Projects: FC = () => {
   return (
@@ -14,6 +15,7 @@ export const Projects: FC = () => {
     >
       <Description />
       <ProjectsGrid items={ProjectsList} />
+      <SectionSwitch toSection="feedback" className="mt-24" />
     </SectionWrapper>
   );
 };

@@ -28,7 +28,7 @@ export const App: FC = () => {
           <Feedback />
         </>
       }
-      footer={<div>Footer</div>}
+      footer={<></>}
     />
   );
 };
