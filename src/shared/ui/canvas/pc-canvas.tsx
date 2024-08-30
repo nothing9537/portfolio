@@ -2,9 +2,10 @@ import { FC, Suspense } from 'react';
 import { isMobile } from 'react-device-detect';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
+
 import { CanvasLoader } from './loader';
 
-export const PC: FC = () => {
+const PC: FC = () => {
   const pc = useGLTF('/desktop_pc/scene.gltf');
 
   const scale = isMobile ? 0.5 : 0.75;

@@ -17,6 +17,15 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import nestjs from "./tech/nestjs.png";
+import nextjs from "./tech/nextjs.png";
+import featureSlicedDesign from "./tech/feature-sliced-design.png";
+import sass from "./tech/sass.png";
+import styledComponents from "./tech/styled-components.png";
+import storybook from "./tech/storybook.png";
+import vite from "./tech/vite.png";
+import webpack from "./tech/webpack.png";
+import zustand from "./tech/zustand.svg";
 
 import puppies from "./company/puppies-ato-z.png";
 import aiPlatform from "./company/ai-platform.png";
@@ -47,5 +56,14 @@ export {
   aiPlatform,
   vercel,
   freezingBlood,
-  productionProject
+  productionProject,
+  nestjs,
+  nextjs,
+  featureSlicedDesign,
+  sass,
+  styledComponents,
+  storybook,
+  vite,
+  webpack,
+  zustand
 };

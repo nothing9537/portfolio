@@ -30,6 +30,7 @@ export const SectionWrapper: FC<SectionWrapperProps> = ({ title, subTitle, descr
       whileInView={"show"}
       viewport={{ once: true, amount: .1 }}
       className={cn(styles.padding, "max-w-7xl mx-auto relative z-0", classNames?.rootClassName)}
+      id={sectionId}
     >
       <motion.div variants={textVariant(1)} className="mb-8">
         <p className={cn(styles.sectionSubText, classNames?.titleClassName)}>{title}</p>
