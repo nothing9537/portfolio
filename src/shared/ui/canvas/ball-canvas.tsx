@@ -26,7 +26,7 @@ const Ball: FC<BallCanvasProps> = ({ img }) => {
         <Decal
           rotation={[2 * Math.PI, 0, 6.25]}
           position={[0, 0, 1]}
-          scale={1}
+          scale={.85}
           map={decal}
         />
       </mesh>
@@ -39,7 +39,7 @@ export const Ball_Canvas: FC<BallCanvasProps> = ({ img }) => {
     <div className="relative w-full h-full">
       <Canvas
         dpr={[1, 2]}
-        frameloop='demand'
+        frameloop='always'
         gl={{ preserveDrawingBuffer: true }}
       >
         <Suspense fallback={<CanvasLoader />}>

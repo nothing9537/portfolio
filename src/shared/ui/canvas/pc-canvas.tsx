@@ -37,7 +37,7 @@ export const PC_Canvas = () => {
   return (
     <div className="relative w-full h-full">
       <Canvas
-        frameloop='demand'
+        frameloop='always'
         shadows
         camera={{ position: [20, 3, 5], fov: 25 }}
         gl={{ preserveDrawingBuffer: true }}

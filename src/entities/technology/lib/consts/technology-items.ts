@@ -17,9 +17,9 @@ export const Technologies: TechnologyItem[] = [
   { name: "Feature Sliced Design", icon: featureSlicedDesign },
   { name: "Next JS", icon: nextjs },
   { name: "Nest JS", icon: nestjs },
-  { name: "Sass", icon: sass },
+  // { name: "Sass", icon: sass },
   // { name: "Storybook", icon: storybook },
-  // { name: "Styled Components", icon: styledComponents },
+  { name: "Styled Components", icon: styledComponents },
   { name: "Vite", icon: vite },
   // { name: "Webpack", icon: webpack },
   // { name: "Zustand", icon: zustand }
