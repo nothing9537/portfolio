@@ -1,6 +1,8 @@
+import { ClassValue } from 'clsx';
+
 export type ProjectTag = {
   name: string;
-  color: string;
+  className: ClassValue;
 };
 
 export type ProjectItem = {
@@ -8,5 +10,9 @@ export type ProjectItem = {
   description: string;
   tags: ProjectTag[];
   image: string;
-  sourceCodeUrl: string;
+  sourceCodeUrl?: string;
+  application?: {
+    icon?: string;
+    url?: string;
+  };
 };

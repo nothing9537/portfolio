@@ -7,9 +7,9 @@ interface TechnologiesGridProps {
   items: TechnologyItem[];
 }
 
-export const TechnologiesGrid: FC<TechnologiesGridProps> = ({ items }) => {
-  const renderTechnology = (item: TechnologyItem) => <TechnologyBall key={item.name} item={item} />;
+const renderTechnology = (item: TechnologyItem) => <TechnologyBall key={item.name} item={item} />;
 
+export const TechnologiesGrid: FC<TechnologiesGridProps> = ({ items }) => {
   return (
     <div className="flex flex-row flex-wrap justify-center gap-12">
       {items.map(renderTechnology)}

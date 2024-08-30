@@ -32,13 +32,14 @@ export const SectionWrapper: FC<SectionWrapperProps> = ({ title, subTitle, descr
       className={cn(styles.padding, "max-w-7xl mx-auto relative z-0", classNames?.rootClassName)}
       id={sectionId}
     >
-      <motion.div variants={textVariant(1)} className="mb-8">
+      <motion.div variants={textVariant(.5)} className="mb-8">
         <p className={cn(styles.sectionSubText, classNames?.titleClassName)}>{title}</p>
         <h2 className={cn(styles.sectionHeadText, classNames?.subTitleClassName)}>{subTitle}</h2>
       </motion.div>
       {descriptionSentences && (
-        descriptionSentences.map((description) => (
+        descriptionSentences.map((description, index) => (
           <motion.p
+            key={`${description}-${index}`}
             variants={fadeIn('right', 'spring', 0.2, 1)}
             className="mt-4 text-secondary text-[16px] max-w-3xl leading-[32px]"
           >

@@ -11,15 +11,15 @@ interface ServiceCardsGridProps {
   className?: ClassValue;
 }
 
-export const ServiceCardsGrid: FC<ServiceCardsGridProps> = ({ services, className }) => {
-  const renderServiceCard = (item: ServiceItem, index: number) => (
-    <ServiceCard
-      key={index}
-      item={item}
-      index={index}
-    />
-  );
+const renderServiceCard = (item: ServiceItem, index: number) => (
+  <ServiceCard
+    key={index}
+    item={item}
+    index={index}
+  />
+);
 
+export const ServiceCardsGrid: FC<ServiceCardsGridProps> = ({ services, className }) => {
   return (
     <div className={cn("flex flex-wrap gap-12", className)}>
       {services.map(renderServiceCard)}

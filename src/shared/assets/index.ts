@@ -5,6 +5,8 @@ import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
 
+// tech icons
+
 import css from "./tech/css.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
@@ -27,11 +29,23 @@ import vite from "./tech/vite.png";
 import webpack from "./tech/webpack.png";
 import zustand from "./tech/zustand.svg";
 
+// project icons
+
 import puppies from "./company/puppies-ato-z.png";
 import aiPlatform from "./company/ai-platform.png";
 import vercel from './company/vercel.png';
 import freezingBlood from './company/freezing-blood.png';
 import productionProject from './company/production-project.png';
+
+// projects
+
+import PuppiesDashboard from './projects/puppies-dashboard.png';
+import AIPlatformDashboard from './projects/ai-platform-dashboard.png';
+import DiscordCloneDashboard from './projects/discord-clone-dashboard.png';
+import ProductionProjectDashboard from './projects/production-project-dashboard.png';
+import GodeyeDashboard from './projects/godeye-dashboard.png';
+import FreezingBloodDashboard from './projects/freezing-blood-dashboard.png';
+import AngickDashboard from './projects/angick-dashboard.png';
 
 export {
   logo,
@@ -65,5 +79,12 @@ export {
   storybook,
   vite,
   webpack,
-  zustand
+  zustand,
+  PuppiesDashboard,
+  AIPlatformDashboard,
+  DiscordCloneDashboard,
+  ProductionProjectDashboard,
+  GodeyeDashboard,
+  FreezingBloodDashboard,
+  AngickDashboard,
 };
