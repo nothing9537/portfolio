@@ -7,7 +7,7 @@ interface TechnologiesGridProps {
   items: TechnologyItem[];
 }
 
-const renderTechnology = (item: TechnologyItem, index: number) => (
+const renderTechnology = (item: TechnologyItem) => (
   <TechnologyBall
     key={item.name}
     item={item}

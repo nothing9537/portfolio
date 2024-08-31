@@ -1,5 +1,4 @@
 import { ReactNode, useCallback } from 'react';
-import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from "@hookform/resolvers/zod"
 import { Loader } from 'lucide-react';
@@ -18,8 +17,6 @@ export const FeedbackForm = (): ReactNode => {
     resolver: zodResolver(FeedbackFormSchema),
     mode: "all"
   });
-
-  console.log(import.meta.env);
 
   const onClearForm = useCallback(() => {
     form.reset();

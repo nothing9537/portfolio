@@ -1,4 +1,25 @@
-import { html, css, javascript, typescript, reactjs, redux, tailwind, nodejs, mongodb, git, figma, featureSlicedDesign, nextjs, nestjs, sass, storybook, styledComponents, vite, webpack, zustand } from '@/shared/assets';
+import {
+  html,
+  css,
+  javascript,
+  typescript,
+  reactjs,
+  redux,
+  tailwind,
+  // nodejs,
+  // mongodb,
+  // git,
+  // figma,
+  featureSlicedDesign,
+  nextjs,
+  nestjs,
+  sass,
+  storybook,
+  styledComponents,
+  vite,
+  // webpack,
+  // zustand
+} from '@/shared/assets';
 
 import { TechnologyItem } from '../../model/types/technology';
 
