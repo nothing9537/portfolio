@@ -1,5 +1,5 @@
 import { FC, ReactNode } from 'react'
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 import { ClassValue } from 'clsx';
 
 import { styles } from '@/shared/consts/styles';
@@ -12,6 +12,7 @@ interface SectionWrapperProps {
   description?: string;
   children: ReactNode;
   sectionId: string;
+  variants?: Variants;
   classNames?: {
     rootClassName?: ClassValue;
     titleClassName?: ClassValue;
@@ -19,13 +20,13 @@ interface SectionWrapperProps {
   };
 }
 
-export const SectionWrapper: FC<SectionWrapperProps> = ({ title, subTitle, description, children, sectionId, classNames }) => {
+export const SectionWrapper: FC<SectionWrapperProps> = ({ title, subTitle, description, children, sectionId, classNames, variants }) => {
 
   const descriptionSentences = description?.split('\n');
 
   return (
     <motion.section
-      variants={staggerContainer(1, 1)}
+      variants={variants || staggerContainer(1, 1)}
       initial="hidden"
       whileInView={"show"}
       viewport={{ once: true, amount: .1 }}

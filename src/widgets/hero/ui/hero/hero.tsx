@@ -7,6 +7,7 @@ import { PC_Canvas } from '@/shared/ui/canvas';
 import { HeroLine } from './hero-line';
 import { HeroTitle } from './title';
 import { SectionSwitch } from '@/shared/ui/section-switch';
+import { VisibilityHandler } from '@/shared/lib/components/visibility-handler';
 
 export const Hero: FC = () => {
   return (
@@ -15,7 +16,9 @@ export const Hero: FC = () => {
         <HeroLine />
         <HeroTitle />
       </div>
-      <PC_Canvas />
+      <VisibilityHandler className="relative w-full h-full">
+        <PC_Canvas />
+      </VisibilityHandler>
       <SectionSwitch toSection="about" />
     </section>
   );

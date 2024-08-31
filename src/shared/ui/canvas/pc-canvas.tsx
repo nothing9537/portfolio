@@ -5,7 +5,7 @@ import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 
 import { CanvasLoader } from './loader';
 
-const PC: FC = () => {
+const PCModel: FC = () => {
   const pc = useGLTF('/desktop_pc/scene.gltf');
 
   const scale = isMobile ? 0.5 : 0.75;
@@ -13,16 +13,8 @@ const PC: FC = () => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={1.75} groundColor="black" />
-      <pointLight intensity={3} />
-      <spotLight
-        position={[-20, 50, 10]}
-        angle={0.12}
-        penumbra={1}
-        intensity={2}
-        castShadow
-        shadow-mapSize={1024}
-      />
+      <hemisphereLight intensity={1.5} groundColor="black" />
+      <pointLight intensity={1} />
       <primitive
         object={pc.scene}
         scale={scale}
@@ -35,24 +27,21 @@ const PC: FC = () => {
 
 export const PC_Canvas = () => {
   return (
-    <div className="relative w-full h-full">
-      <Canvas
-        frameloop='always'
-        shadows
-        camera={{ position: [20, 3, 5], fov: 25 }}
-        gl={{ preserveDrawingBuffer: true }}
-        className="absolute"
-      >
-        <Suspense fallback={<CanvasLoader />}>
-          <OrbitControls
-            enableZoom={false}
-            maxPolarAngle={Math.PI / 2}
-            minPolarAngle={Math.PI / 2}
-          />
-          <PC />
-        </Suspense>
-        <Preload all />
-      </Canvas>
-    </div>
+    <Canvas
+      frameloop='demand'
+      shadows
+      camera={{ position: [20, 3, 5], fov: 25 }}
+      gl={{ preserveDrawingBuffer: true }}
+    >
+      <Suspense fallback={<CanvasLoader />}>
+        <OrbitControls
+          enableZoom={false}
+          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 2}
+        />
+        <PCModel />
+      </Suspense>
+      <Preload all />
+    </Canvas>
   )
 }

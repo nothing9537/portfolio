@@ -7,7 +7,13 @@ interface TechnologiesGridProps {
   items: TechnologyItem[];
 }
 
-const renderTechnology = (item: TechnologyItem) => <TechnologyBall key={item.name} item={item} />;
+const renderTechnology = (item: TechnologyItem, index: number) => (
+  <TechnologyBall
+    key={item.name}
+    item={item}
+    // delay={index * 500}
+  />
+);
 
 export const TechnologiesGrid: FC<TechnologiesGridProps> = ({ items }) => {
   return (

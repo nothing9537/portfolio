@@ -11,7 +11,7 @@ export const About: FC = () => {
     <SectionWrapper
       sectionId="about"
       title='Introduction'
-      subTitle='Overview'
+      subTitle='Overview.'
       description={Description}
       classNames={{
         rootClassName: "relative"

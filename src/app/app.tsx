@@ -7,8 +7,10 @@ import { Experience } from '@/widgets/experience';
 import { Technologies } from '@/widgets/technologies';
 import { Projects } from '@/widgets/projects';
 import { Feedback } from '@/widgets/feedback';
+import { Contacts } from '@/widgets/contacts';
 
 import { MainLayout } from '@/shared/layouts/main-layout';
+import { Stars_Canvas } from '@/shared/ui/canvas/stars-canvas';
 
 export const App: FC = () => {
   return (
@@ -28,7 +30,12 @@ export const App: FC = () => {
           <Feedback />
         </>
       }
-      footer={<></>}
+      footer={
+        <>
+          <Contacts />
+          <Stars_Canvas />
+        </>
+      }
     />
   );
 };

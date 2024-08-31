@@ -8,7 +8,7 @@ interface BallCanvasProps {
   img: string;
 }
 
-const Ball: FC<BallCanvasProps> = ({ img }) => {
+const BallModel: FC<BallCanvasProps> = ({ img }) => {
   const [decal] = useTexture([img]);
 
   return (
@@ -19,8 +19,6 @@ const Ball: FC<BallCanvasProps> = ({ img }) => {
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
           color="#fff"
-          polygonOffset
-          polygonOffsetFactor={-5}
           flatShading
         />
         <Decal
@@ -46,7 +44,7 @@ export const Ball_Canvas: FC<BallCanvasProps> = ({ img }) => {
           <OrbitControls
             enableZoom={false}
           />
-          <Ball img={img} />
+          <BallModel img={img} />
         </Suspense>
         <Preload all />
       </Canvas>
