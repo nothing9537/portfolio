@@ -4,6 +4,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import linkedin from './linkedin.png';
 
 // tech icons
 
@@ -48,6 +49,7 @@ import FreezingBloodDashboard from './projects/freezing-blood-dashboard.png';
 import AngickDashboard from './projects/angick-dashboard.png';
 
 export {
+  linkedin,
   logo,
   backend,
   creator,

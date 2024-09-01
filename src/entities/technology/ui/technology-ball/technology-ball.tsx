@@ -13,9 +13,16 @@ interface TechnologyBallProps {
 export const TechnologyBall: FC<TechnologyBallProps> = ({ item }) => {
   return (
     <Tooltip text={item.name}>
-      <div className="w-28 h-28">
+      <div className="w-28 h-28 shadow-card">
         <VisibilityHandler>
-          <Ball_Canvas img={item.icon} />
+          {(isVisible) => {
+            return (
+              <Ball_Canvas
+                img={item.icon}
+                isVisible={isVisible}
+              />
+            )
+          }}
         </VisibilityHandler>
       </div>
     </Tooltip>

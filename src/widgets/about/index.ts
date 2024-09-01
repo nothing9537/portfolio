@@ -1,1 +1,1 @@
-export { About } from './ui/about-section/about-section';
+export { default } from './ui/about-section/about-section';

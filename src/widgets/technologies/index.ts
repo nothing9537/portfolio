@@ -1,1 +1,1 @@
-export { Technologies } from './ui/technologies-sections/technologies-sections';
+export { default } from './ui/technologies-sections/technologies-section';

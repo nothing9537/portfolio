@@ -2,14 +2,20 @@ import { FC, Suspense } from 'react'
 import { Canvas } from '@react-three/fiber';
 import { Decal, Float, OrbitControls, Preload, useTexture } from '@react-three/drei';
 
-import { CanvasLoader } from './loader';
+import { BaseCanvasProps } from '@/shared/lib/types';
 
-interface BallCanvasProps {
+import { CanvasLoader } from '../loaders';
+
+interface BallCanvasProps extends BaseCanvasProps {
   img: string;
 }
 
-const BallModel: FC<BallCanvasProps> = ({ img }) => {
+const BallModel: FC<BallCanvasProps> = ({ img, isVisible }) => {
   const [decal] = useTexture([img]);
+
+  if (!isVisible) {
+    decal.dispose();
+  }
 
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
@@ -32,7 +38,7 @@ const BallModel: FC<BallCanvasProps> = ({ img }) => {
   );
 };
 
-export const Ball_Canvas: FC<BallCanvasProps> = ({ img }) => {
+export const Ball_Canvas: FC<BallCanvasProps> = ({ img, isVisible }) => {
   return (
     <div className="relative w-full h-full">
       <Canvas
@@ -44,7 +50,7 @@ export const Ball_Canvas: FC<BallCanvasProps> = ({ img }) => {
           <OrbitControls
             enableZoom={false}
           />
-          <BallModel img={img} />
+          <BallModel img={img} isVisible={isVisible} />
         </Suspense>
         <Preload all />
       </Canvas>

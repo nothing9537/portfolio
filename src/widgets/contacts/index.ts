@@ -1,1 +1,1 @@
-export { Contacts } from './ui/contacts-section/contact-section';
+export { default } from './ui/contacts-section/contacts-section';

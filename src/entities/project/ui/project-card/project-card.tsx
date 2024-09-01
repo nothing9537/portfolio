@@ -20,7 +20,7 @@ export const ProjectCard: FC<ProjectCardProps> = ({ item, index }) => {
     >
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
-        className="bg-tertiary p-4 rounded-2xl sm:w-80 w-full"
+        className="bg-tertiary p-4 rounded-2xl sm:w-80 w-full shadow-card"
       >
         <div className="relative w-full h-60">
           <img

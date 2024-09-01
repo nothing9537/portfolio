@@ -14,7 +14,7 @@ export const TestimonialCard: FC<TestimonialCardProps> = ({ item, index }) => {
   return (
     <motion.div
       variants={fadeIn('up', 'tween', index * .5, .75)}
-      className="bg-black-200 p-8 rounded-3xl xs:w-80 w-full"
+      className="bg-black-200 p-8 rounded-3xl xs:w-80 w-full shadow-card"
     >
       <p className="text-white font-black text-5xl select-none">"</p>
       <div className="mt-1">

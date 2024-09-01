@@ -2,9 +2,8 @@ import { FC } from 'react';
 
 import { TechnologiesGrid, Technologies as TechnologiesList } from '@/entities/technology';
 import { SectionWrapper } from '@/shared/layouts/section-layout';
-import { SectionSwitch } from '@/shared/ui/section-switch';
 
-export const Technologies: FC = () => {
+const Technologies: FC = () => {
   return (
     <SectionWrapper
       title='Technologies'
@@ -12,7 +11,8 @@ export const Technologies: FC = () => {
       sectionId='skills'
     >
       <TechnologiesGrid items={TechnologiesList} />
-      <SectionSwitch toSection="projects" className="mt-24" />
     </SectionWrapper>
-  )
-}
+  );
+};
+
+export default Technologies;

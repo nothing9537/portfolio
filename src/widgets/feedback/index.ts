@@ -1,1 +1,1 @@
-export { Feedback } from './ui/feedback-section/feedback-section';
+export { default } from './ui/feedback-section/feedback-section';

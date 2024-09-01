@@ -1,1 +1,1 @@
-export { Projects } from './ui/projects-section/projects-section';
+export { default } from './ui/projects-section/projects-section';

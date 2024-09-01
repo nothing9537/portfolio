@@ -1,9 +1,10 @@
 import { ClassValue } from 'clsx';
 import { FC, ReactNode, useEffect, useRef, useState } from 'react';
+
 import { cn } from '../utils/cn';
 
 interface VisibilityHandlerProps {
-  children: ReactNode;
+  children: (isVisible: boolean) => ReactNode;
   delay?: number;
   className?: ClassValue;
 }
@@ -41,7 +42,7 @@ export const VisibilityHandler: FC<VisibilityHandlerProps> = ({ children, delay 
 
   return (
     <div ref={containerRef} className={cn(className)}>
-      {isVisible && children}
+      {isVisible && children(isVisible)}
     </div>
   );
 };

@@ -38,7 +38,7 @@ export const Navbar: FC = memo(() => {
   );
 
   return (
-    <div className={cn('w-full flex items-center py-4 fixed top-0 z-20 bg-primary', styles.paddingX)}>
+    <div className={cn('w-full flex items-center py-4 fixed top-0 z-20 bg-primary shadow-card', styles.paddingX)}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link to="/" className="flex items-center gap-2" onClick={handleInitialTabSwitch}>
           <Logo onClick={handleInitialTabSwitch} />

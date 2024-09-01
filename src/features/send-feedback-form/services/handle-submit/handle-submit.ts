@@ -21,8 +21,6 @@ export const onFeedbackFormSubmit = async (data: FeedbackSchemaType) => {
   if (response.status === 200) {
     alert("Thanks for reaching out! :) I will reply as soon as possible!");
   } else {
-    alert(`Something went wrong when sending the message..... :( There are some problems with email sending. 
-      If you want to contact me, please go to my LinkedIn and write directly! https://www.linkedin.com/in/vadym-monastyrskyi-684293244`
-    );
+    alert(`Something went wrong when sending the message..... :( There are some problems with email sending.`);
   }
 };

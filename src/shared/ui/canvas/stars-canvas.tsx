@@ -1,11 +1,12 @@
 import { FC, Suspense, useRef } from 'react';
 import { PointMaterial, Points } from '@react-three/drei';
 import { Canvas, useFrame } from '@react-three/fiber';
-
 import * as random from 'maath/random';
+
+import { BaseCanvasProps } from '@/shared/lib/types';
 import { VisibilityHandler } from '@/shared/lib/components/visibility-handler';
 
-const Stars_Model: FC = () => {
+const Stars_Model: FC<BaseCanvasProps> = () => {
   const ref: any = useRef(null);
 
   const sphere = random.inSphere(new Float32Array(5000), { radius: 1.2 });
@@ -36,13 +37,17 @@ const Stars_Model: FC = () => {
 export const Stars_Canvas: FC = () => {
   return (
     <VisibilityHandler className="absolute w-full h-full inset-0 z-[-1]">
-      <Canvas
-        camera={{ position: [0, 0, 1] }}
-      >
-        <Suspense fallback={null}>
-          <Stars_Model />
-        </Suspense>
-      </Canvas>
+      {(isVisible) => {
+        return (
+          <Canvas
+            camera={{ position: [0, 0, 1] }}
+          >
+            <Suspense fallback={null}>
+              <Stars_Model isVisible={isVisible} />
+            </Suspense>
+          </Canvas>
+        )
+      }}
     </VisibilityHandler>
   );
 }

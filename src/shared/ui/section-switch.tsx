@@ -11,7 +11,7 @@ interface SectionSwitchProps {
 
 export const SectionSwitch: FC<SectionSwitchProps> = ({ toSection, className }) => {
   return (
-    <div className={cn("relative z-30 xs:bottom-10 w-full flex justify-center items-center", className)}>
+    <div className={cn("w-full flex justify-center items-center", className)}>
       <a href={`#${toSection}`}>
         <div className="w-[32px] h-[64px] rounded-3xl border-[3px] border-secondary flex justify-center items-start p-2">
           <motion.div

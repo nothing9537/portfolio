@@ -13,7 +13,7 @@ export const MainLayout: FC<MainLayoutProps> = ({ navbar, footer, body }) => {
         {navbar}
       </nav>
       {body}
-      <footer className="relative z-0">
+      <footer className="relative z-0 pb-2">
         {footer}
       </footer>
     </main>

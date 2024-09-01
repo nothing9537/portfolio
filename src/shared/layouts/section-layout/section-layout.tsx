@@ -30,7 +30,7 @@ export const SectionWrapper: FC<SectionWrapperProps> = ({ title, subTitle, descr
       initial="hidden"
       whileInView={"show"}
       viewport={{ once: true, amount: .1 }}
-      className={cn(styles.padding, "max-w-7xl mx-auto relative z-0", classNames?.rootClassName)}
+      className={cn(styles.padding, "max-w-7xl mx-auto relative z-0 shadow-card rounded-3xl", classNames?.rootClassName)}
       id={sectionId}
     >
       <motion.div variants={textVariant(.5)} className="mb-8">

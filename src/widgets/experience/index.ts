@@ -1,1 +1,1 @@
-export { Experience } from './ui/experience-section/experience-section';
+export { default } from './ui/experience-section/experience-section';

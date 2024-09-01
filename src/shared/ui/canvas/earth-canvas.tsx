@@ -1,10 +1,17 @@
 import { FC, Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, useGLTF, Preload } from '@react-three/drei';
-import { CanvasLoader } from './loader';
 
-const EarthModel: FC = () => {
-  const earth = useGLTF('/planet/scene.gltf')
+import { BaseCanvasProps } from '@/shared/lib/types';
+
+import { CanvasLoader } from '../loaders';
+
+const EarthModel: FC<BaseCanvasProps> = ({ isVisible }) => {
+  const earth = useGLTF('/planet/scene.gltf');
+
+  if (!isVisible) {
+    earth.scene.clear();
+  }
 
   return (
     <primitive
@@ -16,7 +23,7 @@ const EarthModel: FC = () => {
   );
 };
 
-export const Earth_Canvas: FC = () => {
+export const Earth_Canvas: FC<BaseCanvasProps> = ({ isVisible }) => {
   return (
     <Canvas
       shadows
@@ -32,7 +39,7 @@ export const Earth_Canvas: FC = () => {
           minPolarAngle={Math.PI / 2}
         />
         <Preload all />
-        <EarthModel />
+        <EarthModel isVisible={isVisible} />
       </Suspense>
     </Canvas>
   );

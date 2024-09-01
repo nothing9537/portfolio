@@ -39,7 +39,7 @@ const renderSkill = (skill: string, index: number) => (
 
 export const ExperienceCard: FC<ExperienceCardProps> = ({ item }) => {
   return (
-    <div>
+    <div className="shadow-card">
       <h3 className="text-white text-[24px] font-bold">{item.title}</h3>
       <p className='text-secondary text-[16px] font-semibold m-0'>
         {item.company}
