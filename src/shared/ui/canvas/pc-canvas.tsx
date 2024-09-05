@@ -12,7 +12,7 @@ interface PCCanvasProps {
 const PCModel: FC<PCCanvasProps> = ({ isVisible }) => {
   const pc = useGLTF('/desktop_pc/scene.gltf');
 
-  const scale = isMobile ? .8 : 1.4;
+  const scale = isMobile ? .8 : 1.2;
   const position = isMobile ? [-1, -2, -1] : [0, -2.5, -1.5];
 
   if (!isVisible) {
@@ -21,8 +21,10 @@ const PCModel: FC<PCCanvasProps> = ({ isVisible }) => {
 
   return (
     <mesh>
-      <hemisphereLight intensity={1.5} groundColor="black" />
-      <pointLight intensity={1} />
+      <hemisphereLight intensity={1.25} groundColor="black" />
+      {/* <spotLight intensity={3} /> */}
+      <pointLight intensity={2} />
+      <ambientLight intensity={.5} />
       <primitive
         object={pc.scene}
         scale={scale}

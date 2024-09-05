@@ -42,12 +42,12 @@ export const Navbar: FC = memo(() => {
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link to="/" className="flex items-center gap-2" onClick={handleInitialTabSwitch}>
           <Logo onClick={handleInitialTabSwitch} />
-          <p className="text-white text-[16px] font-bold cursor-pointer">
+          <p className="text-white text-[16px] font-bold cursor-pointer truncate mr-4">
             Vadym Monastyrskyi&nbsp;
-            <span className="sm:block hidden">Software Engineer</span>
+            <span className="sm:block hidden truncate">Software Engineer</span>
           </p>
         </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-8">
+        <ul className="list-none hidden sm:flex flex-row lg:gap-8 sm:gap-4">
           {NavbarItems.map(renderNavbarItem)}
           <a href="https://github.com/nothing9537/portfolio" target="_blank">
             Source

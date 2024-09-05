@@ -1,3 +1,4 @@
+import { cn } from '@/shared/lib/utils/cn';
 import { FC, ReactNode } from 'react'
 
 interface MainLayoutProps {
@@ -8,8 +9,8 @@ interface MainLayoutProps {
 
 export const MainLayout: FC<MainLayoutProps> = ({ navbar, footer, body }) => {
   return (
-    <main className="relative z-0 bg-primary">
-      <nav className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+    <main className="relative z-0 bg-primary flex flex-col">
+      <nav className={cn("w-full h-24")}>
         {navbar}
       </nav>
       {body}

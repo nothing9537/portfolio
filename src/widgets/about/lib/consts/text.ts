@@ -1,4 +1,4 @@
-export const Description = `Hi! :) I am a frontend, and if I may say so, almost full-stack developer from Ukraine. You can see more details about my skills in the skills section.
+export const Description = `Hi! :) I am a frontend, and almost full-stack developer from Ukraine. You can see more details about my skills in the skills section.
 
 After many years (3.5 years) of labor working and studying, I have developed a strong base in programming, in front-end and back-end areas. 
 

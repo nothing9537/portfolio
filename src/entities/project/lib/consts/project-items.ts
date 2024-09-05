@@ -12,6 +12,7 @@ export const Projects: ProjectItem[] = [
       { name: "react", className: "blue-text-gradient" },
       { name: "mobx", className: "blue-text-gradient" },
       { name: "styled-components", className: "pink-text-gradient" },
+      { name: "vite", className: "green-text-gradient" },
     ],
     application: {
       url: "https://puppies-ato-z.vercel.app",

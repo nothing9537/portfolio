@@ -10,20 +10,20 @@ import { HeroTitle } from './title';
 
 export const Hero: FC = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
-      <div className={cn('absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-col gap-4', styles.paddingX)}>
+    <section className="w-full mx-auto min-h-screen bg-hero-pattern bg-cover bg-no-repeat bg-center">
+      <div className={cn('inset-0 max-w-7xl mx-auto flex flex-col gap-4 mt-4', styles.paddingX)}>
         <div className="w-full flex flex-row items-start gap-4">
           <HeroLine />
           <HeroTitle />
         </div>
-        <VisibilityHandler className="w-full h-full">
-          {(isVisible) => {
-            return (
-              <PC_Canvas isVisible={isVisible} />
-            )
-          }}
-        </VisibilityHandler>
       </div>
+      <VisibilityHandler className="mt-4 w-full h-[28rem]">
+        {(isVisible) => {
+          return (
+            <PC_Canvas isVisible={isVisible} />
+          )
+        }}
+      </VisibilityHandler>
     </section>
   );
 };

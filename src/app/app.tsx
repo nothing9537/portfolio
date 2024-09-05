@@ -19,14 +19,11 @@ import { WidgetLoader } from '@/shared/ui/loaders/widget-loader';
 export const App: FC = () => {
   return (
     <MainLayout
-      navbar={
-        <>
-          <Navbar />
-          <Hero />
-        </>
-      }
+      navbar={<Navbar />}
       body={
-        <div className="flex flex-col gap-12 mx-12">
+        <div className="flex flex-col gap-12">
+          <Hero />
+
           <SectionSwitch toSection="about" />
 
           <LazyLoad loader={<WidgetLoader />} id="about">
