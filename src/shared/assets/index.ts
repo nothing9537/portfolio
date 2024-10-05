@@ -47,6 +47,7 @@ import ProductionProjectDashboard from './projects/production-project-dashboard.
 import GodeyeDashboard from './projects/godeye-dashboard.png';
 import FreezingBloodDashboard from './projects/freezing-blood-dashboard.png';
 import AngickDashboard from './projects/angick-dashboard.png';
+import SlackCloneDashboard from './projects/slack-clone-dashboard.png';
 
 export {
   linkedin,
@@ -89,4 +90,5 @@ export {
   GodeyeDashboard,
   FreezingBloodDashboard,
   AngickDashboard,
+  SlackCloneDashboard,
 };

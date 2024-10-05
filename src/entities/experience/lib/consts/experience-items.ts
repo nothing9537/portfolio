@@ -4,6 +4,21 @@ import { ExperienceItem } from '../../model/types/experience';
 
 export const Experiences: ExperienceItem[] = [
   {
+    title: "Full Stack Developer",
+    company: "Slack Clone",
+    icon: vercel,
+    iconBg: "#383E56",
+    date: "Oct 2024 - Nov 2024",
+    points: [
+      "A clone of the popular corporate messenger Slack.",
+      "Main features: Real time communication, Reactions to messages, Threads / Replies system, Editing / Deleting messages, Role based access control, Images upload, Invite system, User Profiles, Direct messages, Channel / Workspace creation",
+      "Completely developed by me according to best practices based on an online tutorial."
+    ],
+    skills: ["React", "Next JS", "TypeScript", "eslint", "react-hook-form", "zustand", "TailwindCSS", "shadcn-ui", "Feature Sliced Design"],
+    applicationUrl: "https://slack-clone-tau-ten.vercel.app",
+    githubUrl: "https://github.com/nothing9537/slack-clone",
+  },
+  {
     title: "Front-end Developer",
     company: "Puppies Ato-Z",
     icon: puppies,

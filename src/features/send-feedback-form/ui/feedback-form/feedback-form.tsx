@@ -57,6 +57,7 @@ export const FeedbackForm = (): ReactNode => {
             id={id}
             placeholder="What do you want to say?"
             disabled={form.formState.isSubmitting}
+            className="max-h-64"
             {...field}
           />
         )}

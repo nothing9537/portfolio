@@ -1,11 +1,33 @@
-import { aiPlatform, AIPlatformDashboard, AngickDashboard, DiscordCloneDashboard, freezingBlood, FreezingBloodDashboard, GodeyeDashboard, productionProject, ProductionProjectDashboard, puppies, PuppiesDashboard, vercel } from '@/shared/assets';
+import { aiPlatform, AIPlatformDashboard, AngickDashboard, DiscordCloneDashboard, freezingBlood, FreezingBloodDashboard, GodeyeDashboard, productionProject, ProductionProjectDashboard, puppies, PuppiesDashboard, SlackCloneDashboard, vercel } from '@/shared/assets';
 
 import { ProjectItem } from '../../model/types/project';
 
 export const Projects: ProjectItem[] = [
   {
+    name: "Slack Clone",
+    description: "It is a clone of a popular corporate messenger where people can chat in real time, create channels, workspaces, write private messages, upload images, leave reactions to messages and reply in threads. The application also supports roles, and was designed according to best practices in web development!",
+    image: SlackCloneDashboard,
+    tags: [
+      { name: "typescript", className: "blue-text-gradient" },
+      { name: "nextjs", className: "blue-text-gradient" },
+      { name: "feature-sliced-design", className: "blue-text-gradient" },
+      { name: "zustand", className: "blue-text-gradient" },
+      { name: "tailwindcss", className: "pink-text-gradient" },
+      { name: "eslint", className: "pink-text-gradient" },
+      { name: "shadcn-ui", className: "pink-text-gradient" },
+      { name: "react-hook-form", className: "green-text-gradient" },
+      { name: "convex", className: "green-text-gradient" },
+      { name: "Auth.js", className: "green-text-gradient" },
+    ],
+    sourceCodeUrl: "https://github.com/nothing9537/slack-clone",
+    application: {
+      icon: vercel,
+      url: "https://slack-clone-tau-ten.vercel.app"
+    },
+  },
+  {
     name: "Puppies ATO-Z",
-    description: "Web site for finding, adopting, selling pets in the USA. The site has a lot of functionality, personal account, modal windows, blog, breed comparison and much more!",
+    description: "Website for finding, adopting, selling pets in the USA. The application has a lot of functionality, personal account, modal windows, blog, breed comparison and much more!",
     image: PuppiesDashboard,
     tags: [
       { name: "typescript", className: "blue-text-gradient" },
