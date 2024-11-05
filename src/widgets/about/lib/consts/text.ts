@@ -1,12 +1,7 @@
-export const Description = `Hi! :) I am a frontend, and almost full-stack developer from Ukraine. You can see more details about my skills in the skills section.
+export const Description = `Hello! I’m a Frontend Developer with over 3.5 years of experience in building high-quality, scalable applications. My core expertise lies in JavaScript, TypeScript, React, and Next.js, with additional skills in backend development using Node.js and Nest.js. I specialize in crafting performant, responsive applications that provide a seamless user experience.
 
-After many years (3.5 years) of labor working and studying, I have developed a strong base in programming, in front-end and back-end areas. 
+In my work, I prioritize performance optimization and maintainable code. I’m proficient in modern development practices, including state management with Redux, MobX, and Zustand, and I focus on writing clean, structured code that’s easy to scale. My commitment to code quality extends to every aspect of my development process, ensuring that each application is not only functional but also resilient and future-proof.
 
-My main knowledge is in the front-end area, but in the back-end component (node.js environment) I also feel confident!
+I enjoy collaborating within a team to bring projects to life, contributing both technical skills and a user-centric approach. With a keen eye for detail and a passion for continuous learning, I’m always looking to refine my skills and adopt the latest industry best practices. My goal is to build products that are intuitive, efficient, and impactful, streamlining workflows and enhancing user experiences.
 
-I have studied a lot of technologies to develop high-quality, scalable applications.
-I also did not forget about code quality, wrote a lot, studied different patterns and architectures. Because good, clean and quality code, in my opinion, is one of the most important parts of creating an application, I would say, at the level of architecture.
-
-I am a quick learner, able to work in a team and accomplish tasks alone.
-
-Let's work together and create a product that won't be embarrassing and convenient to use! :)`;
+Whether working independently or as part of a team, I bring dedication, adaptability, and a proactive approach to problem-solving. I look forward to building applications that make a difference and working with others who share my passion for high-quality development!`;
